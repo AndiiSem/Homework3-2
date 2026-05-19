@@ -5,14 +5,15 @@
 }
 
 body {
-    background-color: #10012c; /* Той самий колір, що й у контейнера */
+    background-color: #10012c;
     margin: 0;
     padding: 0;
 }
 
 .container{
-    width: 1450px;
+    width: 1600px;
     min-height: 100vh;
+    margin: 0 auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -20,10 +21,9 @@ body {
 }
 
 .header{
-    width: 1300px;
+    width: 1600px;
     height: 150px;
     display: flex;
-    margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
     background: radial-gradient(#081030 , #141434 , #101434);
@@ -36,7 +36,9 @@ body {
     height: 100px;
     margin:20px;
     border-radius: 40px;
-    border: 3px solid white;
+    overflow: hidden;
+    background: url("./img/logo.png");
+    background-size: cover;
 }
 
 
@@ -52,28 +54,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .infoButtons {
-    width: auto;             
+    width: auto;
     height: 50px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    gap: 40px;               
+    gap: 40px;
 }
 
 .infoButton {
     text-decoration: none;
     color: white;
     font-size: 25px;
-    white-space: nowrap;     
+    white-space: nowrap;
     transition: color 0.3s;
 }
 
 .infoButton:hover {
-    color: #8a2be2;         
+    color: #8a2be2;
 }
 
 .buttonStart{
@@ -83,7 +84,6 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
-    
 }
 
 .buttonStart button{
@@ -97,10 +97,9 @@ body {
 }
 
 .main{
-    width: 1300px;
+    width: 1600px;
     min-height: 2000px;
     flex-direction: column;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -111,7 +110,7 @@ body {
 
 .nav{
     width: 300px;
-    height: 800px;
+    height: 810px;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -127,9 +126,8 @@ body {
     width: 300px;
     height: 40px;
     justify-content: flex-start;
-    padding: 30px 20px;
+    padding: 20px 20px;
     color: #9099eb;
-    
 }
 
 .navTitleBorder{
@@ -143,22 +141,109 @@ body {
 
 .navSectionsInfo{
     width: 300px;
-    height: 480px;
+    height: 430px;
     display: flex;
     flex-direction: column;
 }
 
 .navSection{
-    width: 100%;
-    height: 100px;
+    width: 280px;
+    height: 80px;
     display: flex;
     justify-content: flex-start;
+    margin-left: 10px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.2s ;
+}
+
+.navSection:hover{
+    width: 280px;
+    background: #5425be;
+    border: 1px solid #5425be;
 }
 
 .navSectionImg{
-    width: 50px;
-    height: 50px;
-    background: #300871;
-    margin-bottom: 40px;
+    width: 45px;
+    height: 45px;
+    background: #400a96;
+    margin: 0 30px 0 20px;
+    column-gap: 10px;
     border-radius: 30px;
+}
+
+.navSectionText{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 245, 248);
+
+}
+
+.navSectionText h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.navSectionText p{
+    color: rgb(201, 201, 216);
+}
+
+.navSugest{
+    width: 200px;
+    height: 260px;
+    background: #09102d ;
+    border: 1px solid grey;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navSugest img{
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.navSugestText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 245, 248);
+    padding-left: 10px;
+}
+
+.navSugestText h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.navSugestText p{
+    color: rgb(201, 201, 216);
+}
+
+.mainInfo{
+    width: 1270px;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.blockMainInfo{
+    width: 1270px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./img/main_page.png");
+    background-size: cover;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+.blockMainInfo{
+    
 }
