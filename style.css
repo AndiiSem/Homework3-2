@@ -320,3 +320,72 @@ body {
     top: -50px;
 }
 
+.maininfoDetails{
+    width: 1270px;
+    height: 210px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.blockDetail{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background: #09102d ;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
+.DetailMainImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 20px 20px;
+}
+
+.detailImg_1{
+    background: #8c4cf2;
+}
+
+.detailImg_2{
+    background: #256ae5;
+}
+
+.detailImg_3{
+    background: #ea3c7e;
+}
+
+.detailImg_4{
+    background: #89ba36;
+}
+
+
+
+.blockDetailInfo h1{
+    color: white;
+    padding: 25px 0 15px 0 ;
+}
+
+.blockDetailInfo p{
+    color: #9193b3;
+    padding-bottom: 10px;
+}
+
+.blockDetailInfo a{
+    text-decoration: none;
+    color: #8c4cf2;
+}
+
+.detailInfo_2 a{
+    color: #256ae5;
+}
+
+.detailInfo_3 a{
+    color: #ea3c7e;
+}
+
+.detailInfo_4 a{
+    color: #89ba36;;
+}
