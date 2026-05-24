@@ -78,12 +78,13 @@ body {
 }
 
 .buttonStart{
-    width: 280px;
+    width: 600px;
     height: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border: none;
+    padding-right: 50px;
 }
 
 .buttonStart button{
@@ -98,7 +99,7 @@ body {
 
 .main{
     width: 1600px;
-    min-height: 2000px;
+    min-height: 1300px;
     flex-direction: column;
     display: flex;
     flex-direction: row;
@@ -111,7 +112,6 @@ body {
 .nav{
     width: 300px;
     height: 810px;
-    background: #000;
     display: flex;
     flex-direction: column;
     background: radial-gradient(#081030 , #141434 , #101434);
@@ -164,13 +164,37 @@ body {
     border: 1px solid #5425be;
 }
 
-.navSectionImg{
-    width: 45px;
-    height: 45px;
-    background: #400a96;
+.navSectionImg {
+    width: 65px;
+    height: 50px;
     margin: 0 30px 0 20px;
     column-gap: 10px;
-    border-radius: 30px;
+
+}
+
+.SectionImg1{
+    background-image: url("./img/navLogo1.png");
+    background-size: cover;
+}
+
+.SectionImg2{
+    background-image: url("./img/navLogo2.png");
+    background-size: cover;
+}
+
+.SectionImg3{
+    background-image: url("./img/navLogo3.png");
+    background-size: cover;
+}
+
+.SectionImg4{
+    background-image: url("./img/navLogo4.png");
+    background-size: cover;
+}
+
+.SectionImg5{
+    background-image: url("./img/navLogo5.png");
+    background-size: cover;
 }
 
 .navSectionText{
@@ -389,3 +413,114 @@ body {
 .detailInfo_4 a{
     color: #89ba36;;
 }
+
+.footer{
+    width: 1600px;
+    height: 240px;
+    display:flex;
+    background-image: url("./img/footer_main4.png");
+    background-size: cover;
+    margin: 30px 0;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
+.footerBlock{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerSugest h1{
+    color: white;
+    margin: 50px 50px 30px 50px;
+}
+
+.footerSugest p{
+    color: #9193b3;
+    margin: 0 0 30px 50px;
+}
+
+.footerRule{
+    opacity: 0.6;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerInfo_block{
+    width: 33%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    font-size: 13px;
+    color: #807ab4;
+}
+
+.footerInfo_block a{
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+    font-size: 17px;
+    color: #5d5897;
+}
+.footerInfo_block a:hover{
+    color: #807ab4;
+}
+
+.chat-container{
+    position:fixed;
+    right:30px;
+    bottom:80px;
+    z-index:100;
+}
+
+.chat-button{
+    position:relative;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#1b97e2;
+    border:6px solid #5a4f4f14;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.chat-button:hover{
+    transform:scale(1.07);
+}
+
+.chat-icon{
+    width:60px;
+    height:40px;
+    background-image: url("./img/chat.png");
+    background-size: cover;
+    border-radius:50%;
+    position:relative;
+    opacity: 4;
+}
+
+    .chat-badge{
+    position:absolute;
+    top:-5px;
+    right:-5px;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#ec2442;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    font-weight:500;
+    box-shadow:
+    0 0 15px rgba(255,46,77,.7);
+}
+
